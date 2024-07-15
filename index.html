@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vince Xtravaganza</title>
     <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes hoverEffect {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
@@ -12,6 +20,7 @@
             color: #e0e0e0;
             margin: 0;
             padding: 0;
+            animation: fadeIn 2s ease-in-out;
         }
         .container {
             padding: 50px;
@@ -30,10 +39,11 @@
             color: #ffffff;
             background-color: #333333;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
         a:hover {
             background-color: #555555;
+            animation: hoverEffect 0.3s forwards;
         }
         .social-icons {
             width: 30px;
@@ -54,13 +64,13 @@
         </div>
         <p>Follow me on my platforms:</p>
         <a href="https://x.com/ToesTantalizer" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28formerly_Twitter%29.svg" class="social-icons" alt="Twitter Icon">Twitter
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2023%2F08%2FX-Logo.png&f=1&nofb=1&ipt=8cee7024436cdc2da2fdd45d94a2504f330ecd8ef96aeee2f609487600168354&ipo=images" class="social-icons" alt="Twitter Icon">Twitter
         </a>
         <a href="https://thisvid.com/members/4848757/" target="_blank">
-            <img src="https://thisvid.com/static/images/logo.svg" class="social-icons" alt="ThisVid Icon">ThisVid
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.leawo.org%2Fjp%2Ftips%2Fwp-content%2Fuploads%2F2021%2F08%2FThisVid.jpg&f=1&nofb=1&ipt=061e23810ca0fdc78cc64c2164697fb92f9f33501a0b887d787faeed748a3e38&ipo=images" class="social-icons" alt="ThisVid Icon">ThisVid
         </a>
         <a href="https://onlyfans.com/toestantalizer" target="_blank">
-            <img src="https://seeklogo.com/images/O/onlyfans-logo-BC3D5FF8C3-seeklogo.com.png" class="social-icons" alt="OnlyFans Icon">OnlyFans
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogohistory.net%2Fwp-content%2Fuploads%2F2023%2F05%2FOnlyFans-Emblem-1024x576.png&f=1&nofb=1&ipt=806310c821898b7fed7f549b666190ce9ae9f9d064621f8b67a9d969b92a995e&ipo=images" class="social-icons" alt="OnlyFans Icon">OnlyFans
         </a>
     </div>
 </body>
