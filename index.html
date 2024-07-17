@@ -9,10 +9,6 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        @keyframes hoverEffect {
-            from { transform: scale(1); }
-            to { transform: scale(1.1); }
-        }
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
@@ -23,10 +19,21 @@
             animation: fadeIn 2s ease-in-out;
         }
         .container {
-            padding: 50px;
+            padding: 50px 20px;
+        }
+        header {
+            padding: 20px 0;
+        }
+        footer {
+            padding: 20px 0;
+            color: #757575;
+        }
+        header h1, footer p {
+            margin: 0;
         }
         h1 {
             color: #ffffff;
+            font-size: 2.5em;
         }
         p {
             color: #b3b3b3;
@@ -34,7 +41,7 @@
         a {
             display: inline-block;
             margin: 10px;
-            padding: 10px;
+            padding: 10px 20px;
             text-decoration: none;
             color: #ffffff;
             background-color: #333333;
@@ -43,7 +50,6 @@
         }
         a:hover {
             background-color: #555555;
-            animation: hoverEffect 0.3s forwards;
         }
         .social-icons {
             width: 30px;
@@ -53,12 +59,93 @@
         }
         .bio {
             margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .shoe-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .shoe-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s;
+            overflow: hidden;
+            text-align: left;
+        }
+        .shoe-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .shoe-card h2 {
+            margin: 10px 0 5px 0;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .details span {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            gap: 5px;
+        }
+        .details img {
+            width: 15px;
+            height: 15px;
+        }
+        .tags {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .tag {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            color: #fff;
+        }
+        .upcoming-features {
+            background: linear-gradient(45deg, #8e44ad, #c0392b);
+        }
+        .currently-showcased {
+            background: linear-gradient(45deg, #27ae60, #2980b9);
+        }
+        .archived {
+            background: linear-gradient(45deg, #f39c12, #d35400);
+        }
+        .guest-appearances {
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+        }
+        .fresh-finds {
+            background: linear-gradient(45deg, #1abc9c, #2ecc71);
+        }
+        .shoe-card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Vince Xtravaganza</h1>
+    </header>
+    <div class="container">
         <div class="bio">
             <p>Welcome! I'm Vince Xtravaganza, also known as ToesTantalizer. I'm a gay man with a passion for the art of foot fetishism. Follow me on my platforms to see more of my work and connect with me.</p>
         </div>
@@ -72,6 +159,85 @@
         <a href="https://onlyfans.com/toestantalizer" target="_blank">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogohistory.net%2Fwp-content%2Fuploads%2F2023%2F05%2FOnlyFans-Emblem-1024x576.png&f=1&nofb=1&ipt=806310c821898b7fed7f549b666190ce9ae9f9d064621f8b67a9d969b92a995e&ipo=images" class="social-icons" alt="OnlyFans Icon">OnlyFans
         </a>
+        
+        <h2>My Shoe Collection</h2>
+        <div class="shoe-grid">
+            <div class="shoe-card">
+                <img src="assets/shoe-nike-air-tn-plus-white.png" alt="Nike Air TN Plus">
+                <h2>Nike Air TN Plus</h2>
+                <div class="details">
+                    <span>
+                        <img src="assets/assets-shoesize-icon.png" alt="Size Icon">
+                        43
+                    </span>
+                    <span>
+                        <img src="assets/assets-shoecolor-icon.png" alt="Color Icon">
+                        White
+                    </span>
+                    <span class="tag upcoming-features">
+                        <img src="assets/assets-shoecategory-icon.png" alt="Category Icon" width="15" height="15">
+                        Upcoming
+                    </span>
+                </div>
+            </div>
+            <div class="shoe-card">
+                <img src="assets/shoe-nike-af1-flyease.png" alt="AIR FORCE 1 '07 FLYEASE">
+                <h2>AIR FORCE 1 '07 FLYEASE</h2>
+                <div class="details">
+                    <span>
+                        <img src="assets/assets-shoesize-icon.png" alt="Size Icon">
+                        43
+                    </span>
+                    <span>
+                        <img src="assets/assets-shoecolor-icon.png" alt="Color Icon">
+                        White
+                    </span>
+                    <span class="tag currently-showcased">
+                        <img src="assets/assets-shoecategory-icon.png" alt="Category Icon" width="15" height="15">
+                        Currently Showcased
+                    </span>
+                </div>
+            </div>
+			<div class="shoe-card">
+                <img src="assets/shoe-nike-downshifter-10.png" alt="Nike Downshifter 10">
+                <h2>Nike Downshifter 10</h2>
+                <div class="details">
+                    <span>
+                        <img src="assets/assets-shoesize-icon.png" alt="Size Icon">
+                        43
+                    </span>
+                    <span>
+                        <img src="assets/assets-shoecolor-icon.png" alt="Color Icon">
+                        Black
+                    </span>
+                    <span class="tag archived">
+                        <img src="assets/assets-shoecategory-icon.png" alt="Category Icon" width="15" height="15">
+                        Retired
+                    </span>
+                </div>
+            </div>
+			<div class="shoe-card">
+                <img src="assets/shoe-adidas-racer-tr21.png" alt="Adidas Racer Tr21">
+                <h2>Adidas Racer Tr21</h2>
+                <div class="details">
+                    <span>
+                        <img src="assets/assets-shoesize-icon.png" alt="Size Icon">
+                        43
+                    </span>
+                    <span>
+                        <img src="assets/assets-shoecolor-icon.png" alt="Color Icon">
+                        Navy
+                    </span>
+                    <span class="tag guest-appearances">
+                        <img src="assets/assets-shoecategory-icon.png" alt="Category Icon" width="15" height="15">
+                        Guest Appearance
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>&copy; 2024 Vince Xtravaganza. All rights reserved.</p>
+    </footer>
 </body>
 </html>
